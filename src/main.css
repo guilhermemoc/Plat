@@ -1,0 +1,480 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+body,
+html {
+  font-size: 10px;
+  overflow-x: hidden;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+*:before {
+  box-sizing: border-box;
+}
+*:after {
+  box-sizing: border-box;
+}
+@media (max-width: tablet-max) {
+  *:active,
+  *:focus {
+    outline: 0;
+  }
+}
+b,
+strong {
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}
+a:link,
+a:visited,
+a:active {
+  color: inherit;
+}
+.oldiewarning {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background-color: #32363b;
+  overflow: hidden;
+  z-index: 1000;
+  display: none;
+}
+.oldiewarning p,
+.oldiewarning a {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  position: absolute;
+  top: 500px;
+  color: #fff;
+  font-size: 40px;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+.lt-ie9 {
+  overflow: hidden;
+}
+.lt-ie9 .oldiewarning {
+  display: block;
+}
+.slick-list,
+.slick-slider,
+.slick-track {
+  display: block;
+  position: relative;
+}
+.slick-loading .slick-slide,
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+.slick-list,
+.slick-slider,
+.slick-track {
+  position: relative;
+}
+.slick-slider {
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: 0;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+.slick-slider .slick-list,
+.slick-slider .slick-track {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.slick-track {
+  top: 0;
+  left: 0;
+}
+.slick-track:after,
+.slick-track:before {
+  display: table;
+  content: '';
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  cursor: move;
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+[dir=rtl] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+.slick-slide:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
+.carousel .slick-slider,
+.carousel .slick-list,
+.carousel .slick-track {
+  overflow: visible;
+  z-index: 8;
+}
+.carousel [class*="slick-"]:active,
+.carousel [class*="slick-"]:focus {
+  outline: 0;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #282c38;
+}
+body .head-bar {
+  background-color: #282c38;
+  height: 80px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  top: 0;
+  z-index: 99999;
+  margin: 0 auto;
+}
+body .head-bar .logo {
+  float: left;
+  margin-left: 5%;
+  position: relative;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 150px;
+  border: none;
+  height: 50px;
+}
+body .head-bar ul {
+  display: inline-block;
+  margin-left: 4%;
+  position: relative;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 70%;
+}
+body .head-bar ul li {
+  display: inline-block;
+  margin-left: 3%;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+body .head-bar ul li:hover,
+body .head-bar ul li i {
+  color: #0bb6d4;
+  cursor: pointer;
+}
+body .head-bar ul li p {
+  display: inline-block;
+  margin-left: 5px;
+}
+body .head-bar ul li i {
+  display: inline-block;
+  color: #636573;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+body .first-section {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  background-image: url("http://us.battle.net/hearthstone/static/images/333f1f7e-700c-400b-b5ad-5b902cb6772f/mean-streets-of-gadgetzan/header-bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+body .first-section .first-section-content {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  height: 200px;
+  margin: 10% auto 5%;
+  background-color: rgba(52,54,69,0.69);
+}
+body .first-section .first-section-content .red-circle {
+  color: #e62117;
+  font-size: 15px;
+  vertical-align: top;
+  -moz-transform: translateY(3px);
+  -o-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px);
+}
+body .first-section .first-section-content h1 {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 25px;
+  color: #fff;
+  position: relative;
+  top: 30%;
+  -moz-transform: translateY(-30%);
+  -o-transform: translateY(-30%);
+  -ms-transform: translateY(-30%);
+  -webkit-transform: translateY(-30%);
+  transform: translateY(-30%);
+}
+body .first-section .first-section-content .btn-live {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 21px;
+  border-radius: 17px;
+  padding: 7px 2%;
+  position: relative;
+  -moz-transform: translateY(190%);
+  -o-transform: translateY(190%);
+  -ms-transform: translateY(190%);
+  -webkit-transform: translateY(190%);
+  transform: translateY(190%);
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+body .first-section .first-section-content .btn-live:hover {
+  cursor: pointer;
+  color: #0bb6d4;
+  border: 1px solid #0bb6d4;
+}
+body .body-posts {
+  display: block;
+  margin: 1% auto;
+  width: 90%;
+  height: auto;
+  text-align: center;
+  max-width: 1300px;
+}
+body .body-posts .post {
+  width: 290px;
+  display: inline-block;
+  height: 250px;
+  background: #333846;
+  margin: 2% 5px;
+  vertical-align: top;
+}
+body .body-posts .post .post-caption {
+  width: 100%;
+  height: 160px;
+  display: block;
+}
+body .body-posts .post .post-text-container {
+  height: 90px;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+}
+body .body-posts .post .post-text-container p {
+  color: #fff;
+  font-size: 15px;
+  margin: 10px 10px;
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+}
+body .body-posts .post .post-text-container small {
+  float: right;
+  clear: both;
+  width: 100%;
+  display: block;
+  text-align: right;
+  margin-right: 3%;
+  vertical-align: bottom;
+  margin-top: 12%;
+  font-size: 12px;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+}
